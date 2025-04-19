@@ -146,8 +146,7 @@ Interface Layer
 ## 🔗 Key Resources
 
 - 🧠 **GitHub Repo:** [HearLink](https://github.com/swarnojit/HearLink_AI-Hackathon)  
-- 📘 **Full Report & Pitch Deck:** [Project Docs](https://drive.google.com/drive/folders/1Qr_vkHdpDSAaVQ1B-mpHXh7ihRTr4uPL?usp=sharing)  
-- 📄 [Architecture PDF](https://drive.google.com/file/d/1Z0VMRS026JzrETbwyWirto31524bPR7L/view)
+
 
 ---
 
@@ -165,6 +164,7 @@ Interface Layer
 **👨‍💻 Team Name:** HearLink  
 **🧠 Team Lead:** Swarnojit Maitra  
 **Team Members:**  PriyaDeep Mullick I  Arpan Chowdhury I Mayukh Bhowmik
+
 **🏫 Domain:** Education & Accessibility  
 
 
