@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Assist - Hearlink</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/speech_assist.css') }}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{{ url_for('home') }}" class="logo">Hearlink</a>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}#home">Home</a></li>
+                <li><a href="{{ url_for('home') }}#features">Features</a></li>
+                <li><a href="{{ url_for('speech_to_text') }}">Speech Assist</a></li>
+                <li><a href="{{ url_for('home') }}#gallery">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Speech Assist Section -->
+    <section class="speech-assist" id="speech-assist">
+        <div class="space-background">
+            <video autoplay muted loop playsinline class="stars-video">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-background-1610-large.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="particles"></div>
+            <div class="glow-effect glow-blue"></div>
+            <div class="glow-effect glow-pink"></div>
+        </div>
+
+        <div class="container">
+            <h2 class="section-title">Speech Assist for Deaf Students</h2>
+            <p class="section-subtitle">Empower classroom communication with real-time transcription and multilingual support.</p>
+
+            <div class="speech-assist-layout">
+                <!-- Main Area -->
+                <div class="main-area">
+                    <div class="speech-assist-card transcription-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
+                        <div class="card-header">
+                            <h3>Live Transcription</h3>
+                            <button id="play-btn" class="btn btn-icon" title="Play Transcription">
+                                <span class="play-icon">🔊</span>
+                            </button>
+                        </div>
+                        <div class="transcription-content">
+                            <p id="transcription-text">Press record to start transcription...</p>
+                        </div>
+                        <div class="status-indicator">
+                            <p id="status-text">Ready</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Controls -->
+                    <div class="speech-assist-card control-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
+                        <div class="card-header">
+                            <h3>Controls</h3>
+                        </div>
+                        <div class="language-select">
+                            <label for="language">Output Language</label>
+                            <select id="language">
+                                <option value="en">English</option>
+                                <option value="hi">Hindi</option>
+                                <option value="es">Spanish</option>
+                                <option value="fr">French</option>
+                                <option value="de">German</option>
+                                <option value="it">Italian</option>
+                                <option value="zh-CN">Chinese (Simplified)</option>
+                                <option value="ja">Japanese</option>
+                                <option value="ko">Korean</option>
+                                <option value="pt">Portuguese</option>
+                                <option value="ru">Russian</option>
+                                <option value="ar">Arabic</option>
+                                <option value="bn">Bengali</option>
+                                <option value="ta">Tamil</option>
+
+                            </select>
+                        </div>
+                        <div class="voice-input">
+                            <button id="record-btn" class="btn btn-primary">
+                                <span class="mic-icon">🎙️</span> Start Recording
+                            </button>
+                            <div class="recording-indicator" id="recording-indicator"></div>
+                        </div>
+                        <div class="playback-controls">
+                            <div class="control-item">
+                                <label for="speech-rate">Speed</label>
+                                <input type="range" id="speech-rate" min="0.5" max="2" step="0.1" value="1">
+                            </div>
+                            <div class="control-item">
+                                <label for="speech-volume">Volume</label>
+                                <input type="range" id="speech-volume" min="0" max="1" step="0.1" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Transcription History -->
+                    <div class="speech-assist-card history-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
+                        <div class="card-header">
+                            <h3>Transcription History</h3>
+                        </div>
+                        <div class="history-content">
+                            <ul id="history-list"></ul>
+                            <button id="clear-history" class="btn btn-secondary">Clear History</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/speech_assist.js') }}"></script>
+</body>
+</html>
