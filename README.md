@@ -1,52 +1,171 @@
-# HearLink
 
-## 📢 Empowering Deaf Students in Any Classroom
 
-HearLink is an AI-powered support app that enables deaf students to study in any school by providing real-time multilingual speech-to-text transcription, emotion detection for real-time teacher alerts, and AI-generated study materials. Our goal is to create an inclusive and accessible learning environment.
+# 🎧 HearLink – Bridging Educational Gaps with AI
 
----
-
-## 🌟 Key Features
-
-### 🎤 Real-time Multilingual Speech-to-Text
-- Converts spoken language into real-time text in multiple languages.
-- Allows deaf students to follow classroom discussions in their mother tongue.
-
-### 😊 Emotion Detection for Teacher Alerts
-- Detects students' emotions during class.
-- Alerts teachers in real-time when students show signs of confusion or difficulty understanding.
-- Powered by a custom-trained model.
-
-### 📚 AI-Generated Study Materials
-- Teachers can upload lectures and YouTube video links, and AI will generate:
-  - 🎥 Video transcription and summaries
-  - 🃏 Flashcards and notes generation
-  - 📝 AI-generated quizzes and interactive exercises to reinforce learning.
-- Upload notes to get multilingual versions.
-- Available in multiple languages to help students retain information better.
-
-### 👩‍🏫 AI-Powered Teacher Decision Support & Training
-- Provides insights and training recommendations for teachers to improve inclusivity and engagement in classrooms.
-- Structured feedback is generated based on real-time emotion analysis.
-- Suggests minor or major changes based on distress percentage (10%+ for minor adjustments, 20%+ for significant improvements).
-- Teachers can view detailed progress reports for each student on a dashboard.
+> **Empowering Specially-Abled & General Students with AI-Powered Inclusive Education Tools**  
+> *Built with ❤️ for hearing & speech-impaired learners, inclusive classrooms & empathetic educators.*
 
 ---
 
-## 🔜 Future Enhancements
-- 📲 Mobile app integration for greater accessibility.
-- 🎮 Gamified learning experiences to enhance engagement.
+## 🚀 Overview
+
+**HearLink** is an AI-powered educational assistant that brings accessibility, inclusivity, and personalization to the classroom. It’s specially designed to help hearing and speech-impaired students while also offering features beneficial for general students and teachers.
+
+By leveraging real-time speech-to-text, facial emotion recognition, and AI-generated learning content, HearLink transforms any class into an engaging and inclusive experience.
+
+---
+
+## 🧠 Problem We're Solving
+
+> 📚 Lack of real-time assistive tools for communication  
+> 🔇 Difficulty understanding spoken content without lip reading  
+> 😕 No visibility into student emotional engagement  
+> 🚫 No unified platform for accessibility, personalization & insights  
+
+---
+
+## ✨ Key Features
+
+| 👨‍🎓 For Students | 👩‍🏫 For Teachers |
+|------------------|-------------------|
+| 🗣️ Real-time Speech-to-Text | 📊 Emotion Detection + Engagement Insights |
+| 🌐 Multilingual & Offline Support | 📈 Analytics Dashboard |
+| 📋 Personalized Notes, Flashcards & Quizzes | 🧠 Personalized Feedback for Each Student |
+| 📱 Web Platform with Responsive UI | 📑 Reports & Class-wise Trends |
+
+---
+
+## 👥 Target Users
+
+- 🧏‍♂️ **Specially-Abled Students**: Speech-to-text transcription for easier access to lectures
+- 🎓 **General Students**: Personalized AI-generated notes and study materials
+- 👩‍🏫 **Teachers**: Live emotion tracking and dashboards for performance feedback
 
 ---
 
 ## 🛠️ Tech Stack
-- **Speech-to-Text**: Whisper fine-tuning
-- **Emotion Detection**: Custom-trained Facial Emotion Recognition (FER) model
-- **Multilingual Content Generation**: Whisper fine-tuning, Ollama, and AI-based NLP processing
-- **Feedback Generation**: Gemini for AI-powered insights
+
+### 🧩 Frontend
+- `HTML`, `CSS`, `JavaScript`
+- Responsive, accessible design
+
+### 🔧 Backend
+- `Python`
+- `Flask` (API + Routing)
+- `SQLAlchemy` (Database ORM)
+
+### 🧠 Machine Learning & AI
+| Task | Technology |
+|------|------------|
+| Speech-to-Text | `Whisper` by OpenAI |
+| Emotion Detection | `DeepFace`, `OpenCV`, `PyTorch` |
+| NLP / Quiz Generation | `Google Gemini`, `Ollama` |
+| Computer Vision | `OpenCV` | |
 
 ---
 
-## 📧 Contact
-For questions or collaborations, reach out at: maitras600@gmail.com
+## 🧪 Datasets Used
+
+| Type | Datasets |
+|------|----------|
+| 🔊 Speech | `LibriSpeech`, `Mozilla Common Voice` |
+| 😊 Emotion | `FER-2013`, `AffectNet`, `RAF-DB` |
+| 🧾 NLP | `DailyDialog`, `SQuAD`, `Tatoeba` |
+| 🎥 User-Generated | Classroom audio/video, real-time student data |
+| 🧬 Synthetic | Augmented data for robustness |
+
+---
+
+## 📈 Success Criteria
+
+| Metric | Goal |
+|--------|------|
+| 🗣️ Transcription Accuracy | ≥ 85% (Multilingual) |
+| 😐 Emotion Recognition Accuracy | ≥ 80% |
+| 📚 Quiz/Notes Usage | Used by ≥ 3 students during demo |
+| 📉 Improved Engagement | Actionable feedback adopted by teachers |
+| 📡 Offline Usability | Core features available without internet |
+
+---
+
+## 🗃️ System Architecture
+
+```plaintext
+Input Layer
+→ Audio (Mic) / Video (Camera Feed)
+
+↓
+Processing Layer
+→ Speech-to-Text (Whisper)
+→ Emotion Detection (DeepFace + OpenCV)
+→ NLP (Gemini, Ollama)
+→ Vector Storage (FAISS / ChromaDB)
+
+↓
+Application Layer
+→ Study Materials Generator
+→ Teacher Dashboard with Engagement Trends
+
+↓
+Interface Layer
+→ Frontend (HTML/CSS/JS)
+→ Flask API for ML & DB handling
+```
+
+---
+
+## 🛰️ Cloud vs On-Device Mode
+
+| Mode | Details |
+|------|---------|
+| **Cloud (Default)** | Google Cloud Run, Whisper API, Serverless |
+| **Offline (Fallback)** | Whisper Tiny, Emotion models locally on device |
+| **Smart Sync** | Cache locally, sync when connected |
+| **On-Device (Planned)** | Lightweight summary & emotion alerts on mobile |
+
+---
+
+## 🌍 Accessibility Highlights
+
+- 🧏 Icon-based navigation for low-literacy users
+- 🌐 Multilingual support across UI and content
+- 📡 Offline fallback for rural areas
+- 🔐 Privacy-first with user consent & explainability
+
+---
+
+## 📦 Modular & Scalable Design
+
+- 🔌 Plug-and-play modules: Use STT, Emotion Detection, or Quiz Gen independently
+- 🧪 Open-source and community extensible
+- 📱 Works on phones, tablets, desktops
+- 🧠 Localized and scalable across regions
+
+---
+
+## 🔗 Key Resources
+
+- 🧠 **GitHub Repo:** [HearLink](https://github.com/swarnojit/HearLink_AI-Hackathon)  
+- 📘 **Full Report & Pitch Deck:** [Project Docs](https://drive.google.com/drive/folders/1Qr_vkHdpDSAaVQ1B-mpHXh7ihRTr4uPL?usp=sharing)  
+- 📄 [Architecture PDF](https://drive.google.com/file/d/1Z0VMRS026JzrETbwyWirto31524bPR7L/view)
+
+---
+
+## 🔮 Upcoming Enhancements
+
+- 📱 Native Mobile App (React Native)
+- 📷 Emotion Overlay on Video Feed
+- 🧠 Adaptive Quizzes based on real-time emotion
+- 🔗 Blockchain integration for learning logs (planned)
+
+---
+
+## 🤝 Team
+
+**👨‍💻 Team Name:** HearLink  
+**🧠 Team Lead:** Swarnojit Maitra  
+**Team Members:**  PriyaDeep Mullick I  Arpan Chowdhury I Mayukh Bhowmik
+**🏫 Domain:** Education & Accessibility  
+
+
 
