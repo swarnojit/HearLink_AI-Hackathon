@@ -7,6 +7,9 @@
 
 ---
 
+![image](https://github.com/user-attachments/assets/c257ea4e-d522-45a0-b81c-286b9650d146)
+
+
 ## 🚀 Overview
 
 **HearLink** is an AI-powered educational assistant that brings accessibility, inclusivity, and personalization to the classroom. It’s specially designed to help hearing and speech-impaired students while also offering features beneficial for general students and teachers.
