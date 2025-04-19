@@ -5,7 +5,7 @@
 > **Empowering Specially-Abled & General Students with AI-Powered Inclusive Education Tools**  
 > *Built with ❤️ for hearing & speech-impaired learners, inclusive classrooms & empathetic educators.*
 
----
+
 
 ![image](https://github.com/user-attachments/assets/c257ea4e-d522-45a0-b81c-286b9650d146)
 
